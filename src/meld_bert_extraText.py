@@ -67,6 +67,7 @@ class MELD():
 
         if self.pretrainedBertPath.split('/')[-1] == 'roberta-large':
             print('  - Loading RoBERTa...')
+            print("editted")
             tokenizer = RobertaTokenizer.from_pretrained(self.pretrainedBertPath)
         elif self.pretrainedBertPath.split('/')[-1] == 'bert-large':
             print('  - Loading Bert...')
