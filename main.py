@@ -116,6 +116,7 @@ if args.choice_modality == 'V':
 
 elif args.choice_modality == 'T+A+V':
     args.pretrainedtextmodel_path = os.path.join(load_project_path,'pretrained_model',args.plm_name)
+    print("pretrainedtextmodel_path", args.pretrainedtextmodel_path)
     trg_train_data = get_multimodal_data(args, 'train')  
     trg_valid_data = get_multimodal_data(args, 'val')
     trg_test_data = get_multimodal_data(args, 'test')
