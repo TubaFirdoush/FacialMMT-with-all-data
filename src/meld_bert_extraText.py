@@ -63,6 +63,7 @@ class MELD():
         self.set_name = set_name
 
     def preprocess_data(self):
+        print("pretrainedtextmodel_path", args.pretrainedtextmodel_path)
 
         if self.pretrainedBertPath.split('/')[-1] == 'roberta-large':
             print('  - Loading RoBERTa...')
